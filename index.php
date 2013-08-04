@@ -260,7 +260,7 @@ function get_data($url) {
         <div align="center">
           
           <img id="frontpage" src="logo.png" alt="FaceMood"><br/>
-          <div style="margin: 0 auto;" class="fb-login-button" size="large" data-scope="user_likes,user_photos,read_stream,publish_stream"></div>
+          <div style="margin: 0 auto;" class="fb-login-button" size="xlarge" data-scope="user_likes,user_photos,read_stream,publish_stream"></div>
         </div>
       </header>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
