@@ -260,8 +260,8 @@ function get_data($url) {
         <div align="center">
           
           <img id="frontpage" src="logo.png" alt="FaceMood"><br/>
-          <div style="margin: 0 auto;" class="fb-login-button" size="xlarge" data-scope="user_likes,user_photos,read_stream,publish_stream"></div>
-          <div class="fb-like" data-href="https://facem00d.herokuapp.com/" data-width="450" data-show-faces="true" data-send="true"></div>
+          <div style="margin: 0 auto;" class="fb-login-button" size="xlarge" data-scope="user_likes,user_photos,read_stream,publish_stream"></div><br/>
+          <div class="fb-like" data-href="https://facem00d.herokuapp.com/" data-width="450" data-colorscheme="dark" data-show-faces="true" data-send="true"></div>
         </div>
       </header>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
