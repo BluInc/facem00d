@@ -236,7 +236,7 @@ function get_data($url) {
           <!-- Right Nav Section -->
           <ul style="margin-right:10px;" class="right">
             <li>
-              <a onclick="fbLogout()" class="button success" href="#" style="margin: 1 10 0 0;float: left;">Logout</a>
+              <a onclick="fbLogout()" class="button success" href="#" >Logout</a>
             </li>
           </ul>
         </section>
@@ -261,7 +261,7 @@ function get_data($url) {
           <br/><br/><br/>
           <img id="frontpage" src="logo.png" alt="FaceMood"><br/><br/>
           <div style="margin: 0 auto;" class="fb-login-button" size="xlarge" data-scope="user_likes,user_photos,read_stream,publish_stream"></div><br/><br/><br/><br/>
-          <div class="fb-like" data-href="https://facem00d.herokuapp.com/" data-width="311" data-colorscheme="dark" data-show-faces="true" data-send="true"></div>
+          <div class="fb-like" data-href="https://facem00d.herokuapp.com/" data-width="250" data-colorscheme="dark" data-show-faces="true" data-send="true"></div>
         </div>
       </header>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
