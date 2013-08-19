@@ -40,7 +40,7 @@ $facebook = new Facebook(array(
   'trustForwarded' => true,
 ));
 
-/*$user_id = $facebook->getUser();
+$user_id = $facebook->getUser();
 if ($user_id) {
   try {
     // Fetch the viewer's basic information
@@ -52,7 +52,7 @@ if ($user_id) {
       header('Location: '. AppInfo::getUrl($_SERVER['REQUEST_URI']));
       exit();
     }
-  }*/
+  }
 
  /* if(file_exists('./tmp/last_post.data')) {
     $last_post = unserialize(file_get_contents('./tmp/last_post.data'));
@@ -90,7 +90,7 @@ if ($user_id) {
     'method' => 'fql.query',
     'query' => 'SELECT uid, name FROM user WHERE uid IN(SELECT uid2 FROM friend WHERE uid1 = me()) AND is_app_user = 1'
   ));*/
-
+}
 
 // Fetch the basic info of the app that they are using
 $app_info = $facebook->api('/'. AppInfo::appID());
