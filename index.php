@@ -40,7 +40,7 @@ $facebook = new Facebook(array(
   'trustForwarded' => true,
 ));
 
-$user_id = $facebook->getUser();
+/*$user_id = $facebook->getUser();
 if ($user_id) {
   try {
     // Fetch the viewer's basic information
@@ -52,7 +52,7 @@ if ($user_id) {
       header('Location: '. AppInfo::getUrl($_SERVER['REQUEST_URI']));
       exit();
     }
-  }
+  }*/
 
  /* if(file_exists('./tmp/last_post.data')) {
     $last_post = unserialize(file_get_contents('./tmp/last_post.data'));
@@ -86,10 +86,10 @@ if ($user_id) {
 
   // Here is an example of a FQL call that fetches all of your friends that are
   // using this app
-  $app_using_friends = $facebook->api(array(
+  /*$app_using_friends = $facebook->api(array(
     'method' => 'fql.query',
     'query' => 'SELECT uid, name FROM user WHERE uid IN(SELECT uid2 FROM friend WHERE uid1 = me()) AND is_app_user = 1'
-  ));
+  ));*/
 }
 
 // Fetch the basic info of the app that they are using
@@ -233,11 +233,9 @@ function get_data($url) {
         </ul>
 
         <section class="top-bar-section">
-          <!-- Left Nav Section -->
-          <ul class="right">
-            <li>
-              <a style="margin-right:10;" href="#" class="button success" onclick="fbLogout()">Logout</a>
-            </li>
+          <!-- Right Nav Section -->
+          <ul style="margin-right:10px;" class="right">
+              <a onclick="fbLogout()" class="button success" href="#" style="margin: 1 10 0 0;float: left;">Logout</a>
           </ul>
         </section>
       </nav>
@@ -272,9 +270,6 @@ function get_data($url) {
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      </div>
       </div>
       <?php } ?>
       
@@ -389,9 +384,9 @@ function get_data($url) {
     foreach ($home as $status) {
 		// Extract the pieces of info we need from the requests above
 		$message = idx($status, 'message');
-		if(idx($status, 'to') == null) { //filter out posts to others walls
-			if(strlen($message) > 6) {        //filter out short messages
-				if((!stristr(he($message), "happy birthday")) || (!stristr(he($message), "happy b-day")) || (!stristr(he($message), "happy birth day")) || (!stristr(he($message), "feliz cumpleanos"))){ //filter out birthdays
+		if( (idx($status, 'to') == null) &&//filter out posts to others walls
+			(strlen($message) > 6) &&       //filter out short messages
+				((!stristr(he($message), "happy birthday")) || (!stristr(he($message), "happy bday"))) ){ //filter out birthdays
 					  $from = idx($status, 'from');
 					  if(idx($from, 'category') == null) { //filter out Facebook Pages
 						$id = idx($from, 'id');
@@ -442,10 +437,10 @@ function get_data($url) {
   </script>
 
 
-  <script src="js/foundation.min.js"></script>
+<!--   <script src="js/foundation.min.js"></script>
   <script>
     $(document).foundation();
-  </script>
+  </script> -->
   <!-- End Footer -->
 
   <?php }?>
