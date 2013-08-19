@@ -303,6 +303,7 @@ function get_data($url) {
        
     /* Start of Column CSS */
     #container3 {
+      margin-top: 45px;
       clear:left;
       float:left;
       width:100%;
