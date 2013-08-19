@@ -425,8 +425,6 @@ function get_data($url) {
 					}
 				}
 			}
-		}
-	}
         ?>
   
 
