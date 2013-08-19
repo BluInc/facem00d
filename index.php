@@ -235,7 +235,9 @@ function get_data($url) {
         <section class="top-bar-section">
           <!-- Right Nav Section -->
           <ul style="margin-right:10px;" class="right">
+            <li>
               <a onclick="fbLogout()" class="button success" href="#" style="margin: 1 10 0 0;float: left;">Logout</a>
+            </li>
           </ul>
         </section>
       </nav>
