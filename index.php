@@ -262,7 +262,7 @@ function get_data($url) {
         clearInterval(progress);
         $('.progress').removeClass('active');
     } else {
-        $bar.width($bar.width()+30);
+        $bar.width($bar.width()+40);
     }
 }, 1);}
     </script>
