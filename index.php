@@ -39,7 +39,7 @@ $facebook = new Facebook(array(
   'sharedSession' => true,
   'trustForwarded' => true,
 ));
-/*
+
 $user_id = $facebook->getUser();
 if ($user_id) {
   try {
@@ -52,7 +52,7 @@ if ($user_id) {
       header('Location: '. AppInfo::getUrl($_SERVER['REQUEST_URI']));
       exit();
     }
-  }*/
+  }
 
  /* if(file_exists('./tmp/last_post.data')) {
     $last_post = unserialize(file_get_contents('./tmp/last_post.data'));
