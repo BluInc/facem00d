@@ -163,7 +163,7 @@ function get_data($url) {
     <meta property="og:description" content="My first app" />
     <meta property="fb:app_id" content="<?php echo AppInfo::appID(); ?>" />
 
-    <script type="text/javascript" src="/javascript/jquery-1.7.1.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="/ui1/ui/jquery.ui.button.js"></script>
     
 
@@ -249,8 +249,8 @@ function get_data($url) {
     <script src="bootstrap/js/bootstrap.js"></script>
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <script>
-    /*$(document).ready(function(){
-      alert('ready!');
+    function loading(){
+      $(".fb-login-button").hide();
 
     var progress = setInterval(function() {
     var $bar = $('.bar');
@@ -259,11 +259,11 @@ function get_data($url) {
         clearInterval(progress);
         $('.progress').removeClass('active');
     } else {
-        $bar.width($bar.width()+40);
+        $bar.width($bar.width()+4);
     }
     $bar.text($bar.width()/4 + "%");
-}, 800);});
-*/    </script>
+}, 80);});
+    </script>
       <div style="background-color:#391256;">
       <div style="background-color:#391256;"> 
       <nav class="top-bar">
@@ -280,10 +280,10 @@ function get_data($url) {
         <div align="center">
           <br/><br/><br/>
           <img id="frontpage" src="logo.png" alt="FaceMood"><br/><br/>
-          <div style="margin: 0 auto;" class="fb-login-button" size="xlarge" data-scope="user_likes,user_photos,read_stream,publish_stream"></div><br/><br/><br/><br/>
+          <div style="margin: 0 auto;" class="fb-login-button" size="xlarge" onlogin="loading();" data-scope="user_likes,user_photos,read_stream,publish_stream"></div><br/><br/><br/><br/>
           <div class="container">
               <div class="progress progress-striped active">
-                  <div class="bar" style="width: 50%;"></div>
+                  <div class="bar" style="width: 0%;"></div>
               </div>
           </div>
           <div class="fb-like" data-href="https://facem00d.herokuapp.com/" data-width="250" data-colorscheme="dark" data-show-faces="true" data-send="true"></div>
@@ -461,10 +461,10 @@ function get_data($url) {
   </script>
 
 
-  <script src="js/foundation.min.js"></script>
+ <!--  <script src="js/foundation.min.js"></script>
   <script>
     $(document).foundation();
-  </script>
+  </script> -->
   <!-- End Footer -->
 
   <?php }?>
