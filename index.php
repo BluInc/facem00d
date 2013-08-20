@@ -257,14 +257,14 @@ function get_data($url) {
     var progress = setInterval(function() {
     var $bar = $('.bar');
 
-    if ($bar.width()==400) {
+    if ($bar.width()>=400) {
         clearInterval(progress);
         $('.progress').removeClass('active');
     } else {
         $bar.width($bar.width()+4);
     }
     $bar.text($bar.width()/4 + "%");
-}, 500);}
+}, 40);}
     </script>
       <div style="background-color:#391256;">
       <div style="background-color:#391256;"> 
