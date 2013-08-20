@@ -240,6 +240,7 @@ function get_data($url) {
      </div>
       
       <?php } else { ?>
+      <script src="js/bootstrap-progressbar.js"></script>
       <div style="background-color:#391256;">
       <div style="background-color:#391256;"> 
       <nav class="top-bar">
@@ -258,7 +259,7 @@ function get_data($url) {
           <img id="frontpage" src="logo.png" alt="FaceMood"><br/><br/>
           <div style="margin: 0 auto;" class="fb-login-button" size="xlarge" onclick="$('.progress-bar').progressbar();" data-scope="user_likes,user_photos,read_stream,publish_stream"></div><br/><br/><br/><br/>
           <div class="progress progress-striped active">
-            <div class="bar"></div>
+            <div class="progress-bar" aria-valuetransitiongoal="100"></div>
           </div>
           <div class="fb-like" data-href="https://facem00d.herokuapp.com/" data-width="250" data-colorscheme="dark" data-show-faces="true" data-send="true"></div>
         </div>
