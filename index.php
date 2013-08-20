@@ -243,13 +243,15 @@ function get_data($url) {
     <style type="text/css">
       .container {
           margin-top: 30px;
-          width: 400px;
+          width: 200px;
+          display:none;
       }
     </style>
     <script src="bootstrap/js/bootstrap.js"></script>
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <script>
     function loading(){
+      $(".container").show();
       $(".fb-login-button").hide();
 
     var progress = setInterval(function() {
@@ -262,7 +264,7 @@ function get_data($url) {
         $bar.width($bar.width()+4);
     }
     $bar.text($bar.width()/4 + "%");
-}, 80);});
+}, 80);}
     </script>
       <div style="background-color:#391256;">
       <div style="background-color:#391256;"> 
