@@ -257,7 +257,7 @@ function get_data($url) {
         <div align="center">
           <br/><br/><br/>
           <img id="frontpage" src="logo.png" alt="FaceMood"><br/><br/>
-          <div style="margin: 0 auto;" class="fb-login-button" size="xlarge" onclick="alert('clicked');$('.progress').progressbar();" data-scope="user_likes,user_photos,read_stream,publish_stream"></div><br/><br/><br/><br/>
+          <div style="margin: 0 auto;" class="fb-login-button" size="xlarge" onlogin="alert('clicked');$('.progress .progress-bar').progressbar();" data-scope="user_likes,user_photos,read_stream,publish_stream"></div><br/><br/><br/><br/>
           <div class="progress progress-striped active">
             <div class="progress-bar" aria-valuetransitiongoal="100"></div>
           </div>
