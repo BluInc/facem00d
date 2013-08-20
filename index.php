@@ -246,6 +246,8 @@ function get_data($url) {
           width: 400px;
       }
     </style>
+    <script src="bootstrap/js/bootstrap.js"></script>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <script>
     $(document).ready(function(){
       alert('ready!');
@@ -318,8 +320,7 @@ function get_data($url) {
 		});
 	}
   </script>
-  <script src="bootstrap/js/bootstrap.js"></script>
-  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  
 
    <style type="text/css">
        
