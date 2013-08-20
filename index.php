@@ -242,7 +242,7 @@ function get_data($url) {
       <?php } else { ?>
     <style type="text/css">
       .progress-bar {
-          /*margin-top: 30px;*/
+          margin-top: 30px;
           width: 400px;
           display:none;
       }
@@ -251,8 +251,9 @@ function get_data($url) {
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <script>
     function loading(){
-      $(".progress-bar").show();
       $(".fb-login-button").hide();
+      $(".progress-bar").show();
+      
 
     var progress = setInterval(function() {
     var $bar = $('.bar');
@@ -261,10 +262,9 @@ function get_data($url) {
         clearInterval(progress);
         $('.progress').removeClass('active');
     } else {
-        $bar.width($bar.width()+4);
+        $bar.width($bar.width()+7);
     }
-    $bar.text($bar.width()/4 + "%");
-}, 40);}
+}, 1);}
     </script>
       <div style="background-color:#391256;">
       <div style="background-color:#391256;"> 
