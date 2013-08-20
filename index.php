@@ -242,7 +242,7 @@ function get_data($url) {
       <?php } else { ?>
     <style type="text/css">
       .progress-bar {
-          /*margin-top: 30px;*/
+          margin-top: 10px;
           width: 400px;
           display:none;
       }
@@ -251,8 +251,8 @@ function get_data($url) {
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <script>
     function loading(){
-      $(".fb-login-button").slideUp();
-      $(".progress-bar").show();
+      $(".fb-login-button").fadeOut();
+      $(".progress-bar").fadeIn();
       
 
     var progress = setInterval(function() {
@@ -284,6 +284,7 @@ function get_data($url) {
           <img id="frontpage" src="logo.png" alt="FaceMood"><br/><br/>
           <div style="margin: 0 auto;" class="fb-login-button" size="xlarge" onlogin="loading();" data-scope="user_likes,user_photos,read_stream,publish_stream"></div>
           <div class="progress-bar">
+            <p style="font-family:georgia;">Performing Sentiment Analysis...</p>
               <div class="progress progress-striped active">
                   <div class="bar" style="width: 0%;"></div>
               </div>
