@@ -249,7 +249,7 @@ function get_data($url) {
     <script src="bootstrap/js/bootstrap.js"></script>
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <script>
-    $(document).ready(function(){
+    /*$(document).ready(function(){
       alert('ready!');
 
     var progress = setInterval(function() {
@@ -263,7 +263,7 @@ function get_data($url) {
     }
     $bar.text($bar.width()/4 + "%");
 }, 800);});
-    </script>
+*/    </script>
       <div style="background-color:#391256;">
       <div style="background-color:#391256;"> 
       <nav class="top-bar">
@@ -326,7 +326,7 @@ function get_data($url) {
        
     /* Start of Column CSS */
     #container3 {
-      margin-top: 45px;
+      /*margin-top: 45px;*/
       clear:left;
       float:left;
       width:100%;
