@@ -251,7 +251,7 @@ function get_data($url) {
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <script>
     function loading(){
-      $(".fb-login-button").hide();
+      $(".fb-login-button").slideUp();
       $(".progress-bar").show();
       
 
