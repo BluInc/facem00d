@@ -217,9 +217,6 @@ function get_data($url) {
 	  
 	  
     </script>
-
-    
-
     
       <?php if (isset($basic)) { ?>
     <div class="fixed"> 
@@ -259,11 +256,14 @@ function get_data($url) {
         <div align="center">
           <br/><br/><br/>
           <img id="frontpage" src="logo.png" alt="FaceMood"><br/><br/>
-          <div style="margin: 0 auto;" class="fb-login-button" size="xlarge" data-scope="user_likes,user_photos,read_stream,publish_stream"></div><br/><br/><br/><br/>
+          <div style="margin: 0 auto;" class="fb-login-button" size="xlarge" onclick="$('.progress-bar').progressbar();" data-scope="user_likes,user_photos,read_stream,publish_stream"></div><br/><br/><br/><br/>
+          <div class="progress progress-striped active">
+            <div class="bar"></div>
+          </div>
           <div class="fb-like" data-href="https://facem00d.herokuapp.com/" data-width="250" data-colorscheme="dark" data-show-faces="true" data-send="true"></div>
         </div>
+
       </header>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -294,7 +294,8 @@ function get_data($url) {
 		});
 	}
   </script>
-
+  <script src="bootstrap/js/bootstrap.js"></script>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 
    <style type="text/css">
        
