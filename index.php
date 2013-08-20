@@ -248,6 +248,7 @@ function get_data($url) {
     </style>
     <script>
     $(document).ready(function(){
+      alert('ready!');
 
     var progress = setInterval(function() {
     var $bar = $('.bar');
