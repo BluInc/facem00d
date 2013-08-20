@@ -259,7 +259,7 @@ function get_data($url) {
         $bar.width($bar.width()+40);
     }
     $bar.text($bar.width()/4 + "%");
-}, 800);});​
+}, 800);});
     </script>
       <div style="background-color:#391256;">
       <div style="background-color:#391256;"> 
