@@ -240,7 +240,29 @@ function get_data($url) {
      </div>
       
       <?php } else { ?>
-      <script src="js/bootstrap-progressbar.js"></script>
+    <style type="text/css">
+      .container {
+          margin-top: 30px;
+          width: 400px;
+      }​
+    </style>
+    <script>
+    $(document).ready(function(){
+
+    var progress = setInterval(function() {
+    var $bar = $('.bar');
+
+    if ($bar.width()==400) {
+        clearInterval(progress);
+        $('.progress').removeClass('active');
+    } else {
+        $bar.width($bar.width()+40);
+    }
+    $bar.text($bar.width()/4 + "%");
+}, 800);
+
+});​
+    </script>
       <div style="background-color:#391256;">
       <div style="background-color:#391256;"> 
       <nav class="top-bar">
@@ -257,10 +279,12 @@ function get_data($url) {
         <div align="center">
           <br/><br/><br/>
           <img id="frontpage" src="logo.png" alt="FaceMood"><br/><br/>
-          <div style="margin: 0 auto;" class="fb-login-button" size="xlarge" onlogin="alert('clicked');$('.progress .progress-bar').progressbar();" data-scope="user_likes,user_photos,read_stream,publish_stream"></div><br/><br/><br/><br/>
-          <div class="progress progress-striped active">
-            <div class="progress-bar" aria-valuetransitiongoal="100"></div>
-          </div>
+          <div style="margin: 0 auto;" class="fb-login-button" size="xlarge" onlogin="alert('clicked');" data-scope="user_likes,user_photos,read_stream,publish_stream"></div><br/><br/><br/><br/>
+          <div class="container">
+              <div class="progress progress-striped active">
+                  <div class="bar" style="width: 0%;"></div>
+              </div>
+          </div>​
           <div class="fb-like" data-href="https://facem00d.herokuapp.com/" data-width="250" data-colorscheme="dark" data-show-faces="true" data-send="true"></div>
         </div>
 
@@ -437,10 +461,10 @@ function get_data($url) {
   </script>
 
 
-<!--   <script src="js/foundation.min.js"></script>
+  <script src="js/foundation.min.js"></script>
   <script>
     $(document).foundation();
-  </script> -->
+  </script>
   <!-- End Footer -->
 
   <?php }?>
