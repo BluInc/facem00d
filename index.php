@@ -242,7 +242,7 @@ function get_data($url) {
       <?php } else { ?>
     <style type="text/css">
       .progress-bar {
-          margin-top: 10px;
+          /*margin-top: 10px;*/
           width: 400px;
           display:none;
       }
@@ -282,9 +282,9 @@ function get_data($url) {
         <div align="center">
           <br/><br/><br/>
           <img id="frontpage" src="logo.png" alt="FaceMood"><br/><br/>
-          <div style="margin: 0 auto;" class="fb-login-button" size="xlarge" onlogin="loading();" data-scope="user_likes,user_photos,read_stream,publish_stream"></div>
+          <div style="margin: 0 auto;" class="fb-login-button" size="xlarge" onlogin="location.reload();loading();" data-scope="user_likes,user_photos,read_stream,publish_stream"></div>
           <div class="progress-bar">
-            <p style="font-family:georgia;">Performing Sentiment Analysis...</p>
+            <p style="font-family:georgia;color:lightgray;">Performing Sentiment Analysis...</p>
               <div class="progress progress-striped active">
                   <div class="bar" style="width: 0%;"></div>
               </div>
