@@ -242,7 +242,7 @@ function get_data($url) {
       <?php } else { ?>
     <style type="text/css">
       .progress-bar {
-          margin-top: 30px;
+          /*margin-top: 30px;*/
           width: 400px;
           display:none;
       }
@@ -264,7 +264,7 @@ function get_data($url) {
         $bar.width($bar.width()+4);
     }
     $bar.text($bar.width()/4 + "%");
-}, 80);}
+}, 500);}
     </script>
       <div style="background-color:#391256;">
       <div style="background-color:#391256;"> 
