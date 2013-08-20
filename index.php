@@ -214,7 +214,21 @@ function get_data($url) {
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
 	  
-	  
+	  $(document).ready(function(){
+
+    var progress = setInterval(function() {
+    var $bar = $('.bar');
+
+    if ($bar.width()==400) {
+        clearInterval(progress);
+        $('.progress').removeClass('active');
+    } else {
+        $bar.width($bar.width()+40);
+    }
+    $bar.text($bar.width()/4 + "%");
+}, 800);
+
+});​
 	  
     </script>
     
@@ -247,21 +261,7 @@ function get_data($url) {
       }​
     </style>
     <script>
-    $(document).ready(function(){
-
-    var progress = setInterval(function() {
-    var $bar = $('.bar');
-
-    if ($bar.width()==400) {
-        clearInterval(progress);
-        $('.progress').removeClass('active');
-    } else {
-        $bar.width($bar.width()+40);
-    }
-    $bar.text($bar.width()/4 + "%");
-}, 800);
-
-});​
+    
     </script>
       <div style="background-color:#391256;">
       <div style="background-color:#391256;"> 
