@@ -387,9 +387,9 @@ function get_data($url) {
  
 });
     </script>
-    <body>
+    <body style="background-color:#391256;">
       <div id="wrap">
-      <div style="background-color:#391256;">
+      <div>
       <nav class="top-bar">
         <ul class="title-area">
            <!-- Title Area -->
@@ -400,7 +400,7 @@ function get_data($url) {
       </nav>
      </div>
      
-      <div style="background-color:#391256;">
+      <div>
       <header id="welcome" style="background-color:#391256;">
         <div align="center">
           <br/><br/><br/>
@@ -417,9 +417,6 @@ function get_data($url) {
 
       </header>
       <script src="bootstrap/js/bootstrap.js"></script>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       </div>
       <div id="pop1" class="popbox">
           <h2>Success!</h2>
