@@ -240,6 +240,8 @@ function get_data($url) {
      </div>
       
       <?php } else { ?>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+
     <style type="text/css">
 /* Sticky footer styles
       -------------------------------------------------- */
@@ -321,7 +323,6 @@ function get_data($url) {
     padding: 5px 10px;
 }
     </style>
-  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <script>
     function loading(){
       $(".fb-login-button").fadeOut();
@@ -386,6 +387,8 @@ function get_data($url) {
  
 });
     </script>
+    <body>
+      <div id="wrap">
       <div style="background-color:#391256;">
       <nav class="top-bar">
         <ul class="title-area">
@@ -396,8 +399,8 @@ function get_data($url) {
         </ul>
       </nav>
      </div>
-     <body>
-      <div id="wrap" style="background-color:#391256;">
+     
+      <div style="background-color:#391256;">
       <header id="welcome" style="background-color:#391256;">
         <div align="center">
           <br/><br/><br/>
@@ -413,10 +416,11 @@ function get_data($url) {
         </div>
 
       </header>
-    <script src="bootstrap/js/bootstrap.js"></script>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <script src="bootstrap/js/bootstrap.js"></script>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </div>
       <div id="pop1" class="popbox">
           <h2>Success!</h2>
           <p>This is an example popbox.</p>
@@ -427,9 +431,12 @@ function get_data($url) {
       </div>
       <div id="push"></div>
     </div>
+    
       <div id="footer">
         <div class="container">
-          <p class="muted credit">FaceMood 2013 · This is a popbox test.  <a href="#" class="popper" data-popbox="pop1">Hover here</a> to see how it works.  You can also hover <a href="#" class="popper" data-popbox="pop2">here</a> to see a different example.</p>
+          <p class="muted credit">FaceMood 2013 · 
+            <a href="#" class="popper" data-popbox="pop1">About</a> · 
+            <a href="#" class="popper" data-popbox="pop2">Us</a></p>
         </div>
       </div></body>
       <?php } ?>
