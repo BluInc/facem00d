@@ -397,7 +397,7 @@ function get_data($url) {
       </nav>
      </div>
      <body>
-      <div style="background-color:#391256;">
+      <div id="wrap" style="background-color:#391256;">
       <header id="welcome" style="background-color:#391256;">
         <div align="center">
           <br/><br/><br/>
@@ -417,21 +417,21 @@ function get_data($url) {
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       <div id="pop1" class="popbox">
-    <h2>Success!</h2>
-    <p>This is an example popbox.</p>
-</div>
-<div id="pop2" class="popbox">
-    <h2>Danger!</h2>
-    <p>Don't let this popbox go off the screen!</p>
-</div>
-          <div id="footer">
-      <div class="container">
-        <p class="muted credit">FaceMood 2013 · This is a popbox test.  <a href="#" class="popper" data-popbox="pop1">Hover here</a> to see how it works.  You can also hover <a href="#" class="popper" data-popbox="pop2">here</a> to see a different example.</p>
+          <h2>Success!</h2>
+          <p>This is an example popbox.</p>
       </div>
-    </div></body>
+      <div id="pop2" class="popbox">
+          <h2>Danger!</h2>
+          <p>Don't let this popbox go off the screen!</p>
+      </div>
+      <div id="push"></div>
+    </div>
+      <div id="footer">
+        <div class="container">
+          <p class="muted credit">FaceMood 2013 · This is a popbox test.  <a href="#" class="popper" data-popbox="pop1">Hover here</a> to see how it works.  You can also hover <a href="#" class="popper" data-popbox="pop2">here</a> to see a different example.</p>
+        </div>
+      </div></body>
       <?php } ?>
       
 
