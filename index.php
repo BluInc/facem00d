@@ -245,7 +245,7 @@ function get_data($url) {
     <style type="text/css">
 /* Sticky footer styles
       -------------------------------------------------- */
-
+      html,
       body {
         height: 100%;
         /* The html and body elements cannot have any padding or margin. */
@@ -319,7 +319,7 @@ function get_data($url) {
     font-size: 14px;
     display: block;
     width: 100%;
-    margin: -10px 0px 8px -10px;
+    margin: -29px 0px 0px -9px;
     padding: 5px 10px;
 }
     </style>
@@ -416,15 +416,16 @@ function get_data($url) {
         </div>
 
       </header>
-      <script src="bootstrap/js/bootstrap.js"></script>
       </div>
       <div id="pop1" class="popbox">
-          <h2>Success!</h2>
-          <p>This is an example popbox.</p>
+          <h2>About</h2>
+          <p>FaceMood stands at the frontier of sentiment analysis.
+        After you log in, we run our proprietary software to categorize your friends' status messages by how they're feeling.
+        The results are quite magical. Like, Log In, Love.</p>
       </div>
       <div id="pop2" class="popbox">
-          <h2>Danger!</h2>
-          <p>Don't let this popbox go off the screen!</p>
+          <h2>Us</h2>
+          <p>Built by Kevin Mangan, Willy Vasquez, and Bowen Lu. All rights reserved.</p>
       </div>
       <div id="push"></div>
     </div>
@@ -435,7 +436,13 @@ function get_data($url) {
             <a href="#" class="popper" data-popbox="pop1">About</a> · 
             <a href="#" class="popper" data-popbox="pop2">Us</a></p>
         </div>
-      </div></body>
+      </div>
+
+      <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<script src="bootstrap/js/bootstrap.js"></script>
+    </body>
       <?php } ?>
       
 
