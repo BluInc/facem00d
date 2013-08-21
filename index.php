@@ -241,6 +241,57 @@ function get_data($url) {
       
       <?php } else { ?>
     <style type="text/css">
+/* Sticky footer styles
+      -------------------------------------------------- */
+
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+
+
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+
+      .container {
+        width: auto;
+        max-width: 680px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+
+      /* ------------------------------------------*/    
       .progress-bar {
           /*margin-top: 10px;*/
           width: 400px;
@@ -336,7 +387,6 @@ function get_data($url) {
 });
     </script>
       <div style="background-color:#391256;">
-      <div style="background-color:#391256;"> 
       <nav class="top-bar">
         <ul class="title-area">
            <!-- Title Area -->
@@ -346,6 +396,7 @@ function get_data($url) {
         </ul>
       </nav>
      </div>
+     <body>
       <div style="background-color:#391256;">
       <header id="welcome" style="background-color:#391256;">
         <div align="center">
@@ -380,7 +431,7 @@ function get_data($url) {
       <div class="container">
         <p class="muted credit">FaceMood 2013 · This is a popbox test.  <a href="#" class="popper" data-popbox="pop1">Hover here</a> to see how it works.  You can also hover <a href="#" class="popper" data-popbox="pop2">here</a> to see a different example.</p>
       </div>
-    </div>
+    </div></body>
       <?php } ?>
       
 
