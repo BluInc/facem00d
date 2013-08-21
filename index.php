@@ -303,7 +303,7 @@ function get_data($url) {
     display: none;
     position: absolute;
     z-index: 99999;
-    width: 400px;
+    width: 360px;
     padding: 10px;
     background: #EEEFEB;
     color: #000000;
@@ -318,7 +318,7 @@ function get_data($url) {
     color:  #E3E5DD;
     font-size: 14px;
     display: block;
-    width: 100%;
+    width: 355;
     margin: -29px 0px 0px -9px;
     padding: 5px 10px;
 }
