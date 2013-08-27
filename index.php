@@ -459,6 +459,7 @@ function get_data($url) {
     }
 	
 	function submitComment(id) {
+    alert('submitting comment');
 		url = "https://graph.facebook.com/" + id + "/comment";
 		content = $form.find('input[id="' + id + '"]').val();
 		var posting = $.post(url, {"message":  content} );
