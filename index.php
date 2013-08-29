@@ -457,6 +457,10 @@ function get_data($url) {
             window.location.reload();
         });
     }
+
+    function appendNode(datResult, returnHTML) {
+      $('#'+datResult+' .friends').append(returnHTML);
+    }
 	
 	function submitComment(id) {
     alert('submitting comment');
@@ -578,23 +582,20 @@ function get_data($url) {
 
 						}
 						
-						$datResult = assignFriend($message);
+						$datResult = assignFriend($message); ?>
+
+            <script>
+              appendNode('<?php echo $datResult; ?>','<?php echo $returnHTML; ?>');
+            </script>
+
+            <?php
 						
-						if($datResult == "positive" ){  ?>
-						  <script>
-							$('#positive .friends').append('<?php echo $returnHTML; ?>');</script>
-						 <?php } elseif($datResult == "neutral"){ ?>
-						  <script>
-							$('#neutral .friends').append('<?php echo $returnHTML; ?>');</script>
-						<?php } elseif($datResult == "negative"){ ?>
-						  <script>
-							$('#negative .friends').append('<?php echo $returnHTML; ?>');</script>
-						<?php } 
+						
 					}
 				}
 			}
-        ?>
-  
+
+  ?>
 
   <script>
   document.write('<script src=js/vendor/' +
