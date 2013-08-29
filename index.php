@@ -467,8 +467,7 @@ function get_data($url) {
 			document.write(data);
 		});
 	}
-  </script>
-   <style type="text/css">
+  </script><style type="text/css">
        
     /* Start of Column CSS */
     #container3 {
