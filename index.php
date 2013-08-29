@@ -468,8 +468,6 @@ function get_data($url) {
 		});
 	}
   </script>
-  
-
    <style type="text/css">
        
     /* Start of Column CSS */
