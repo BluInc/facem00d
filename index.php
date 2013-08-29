@@ -582,16 +582,13 @@ function get_data($url) {
 						
 						if($datResult == "positive" ){  ?>
 						  <script>
-							$('#positive .friends').append('<?php echo $returnHTML; ?>');
-						  </script>
+							$('#positive .friends').append('<?php echo $returnHTML; ?>');</script>
 						 <?php } elseif($datResult == "neutral"){ ?>
 						  <script>
-							$('#neutral .friends').append('<?php echo $returnHTML; ?>');
-						  </script>
+							$('#neutral .friends').append('<?php echo $returnHTML; ?>');</script>
 						<?php } elseif($datResult == "negative"){ ?>
 						  <script>
-							$('#negative .friends').append('<?php echo $returnHTML; ?>');
-						  </script>
+							$('#negative .friends').append('<?php echo $returnHTML; ?>');</script>
 						<?php } 
 					}
 				}
