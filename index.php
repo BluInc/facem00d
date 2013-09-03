@@ -240,7 +240,7 @@ function get_data($url) {
      </div>
       
       <?php } else { ?>
-  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 
     <style type="text/css">
 /* Sticky footer styles
@@ -405,7 +405,7 @@ function get_data($url) {
         <div align="center">
           <br/><br/><br/>
           <img id="frontpage" src="logo.png" alt="FaceMood"><br/><br/>
-          <div style="margin: 0 auto;" class="fb-login-button" size="xlarge" onlogin="location.reload();loading();" data-scope="user_likes,user_photos,read_stream,publish_stream"></div>
+          <div style="margin: 0 auto;" class="fb-login-button" size="xlarge" onlogin="location.reload();loading();" data-scope="user_likes,user_photos,read_stream,publish_actions"></div>
           <div class="progress-bar">
             <p style="font-family:georgia;color:lightgray;">Performing Sentiment Analysis...</p>
               <div class="progress progress-striped active">
@@ -577,7 +577,7 @@ function get_data($url) {
 							$post_id = idx($status, 'id');
 							$url = idx($status, 'link');                     
 
-							$returnHTML = '<div class="panel"><a href="https://www.facebook.com/' . he($id) . '" target="_top"><img src="https://graph.facebook.com/' . he($id) . '/picture?type=square" alt=" ' . he($name) . '">&nbsp;&nbsp;<strong>' . he($name) . '</strong></a><br><br><a href="' . he($url) . '" target="_blank">' . he($message) . '</a><hr> <div class="row collapse"> <form action="https://graph.facebook.com/'.he($post_id).'/comments" method="POST"> <input name="message" type="text" id="' . he($post_id) . '" placeholder="Comment on their mood..."> <input type="submit" value="Post" class="button prefix">  </div></div>';
+							$returnHTML = '<div class="panel"><a href="https://www.facebook.com/' . he($id) . '" target="_top"><img src="https://graph.facebook.com/' . he($id) . '/picture?type=square" alt=" ' . he($name) . '">&nbsp;&nbsp;<strong>' . he($name) . '</strong></a><br><br><a href="' . he($url) . '" target="_blank">' . he($message) . '</a><hr> <div class="row collapse"> <form> <input name="message" type="text" id="' . he($post_id) . '" placeholder="Comment on their mood..."> <input type="submit" value="Post" class="button prefix">  </div></div>';
 
 
 						}
